@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My wish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<header data-response="AG">
+    <div class="header_rightPart">
+        <div class="logo"><a href="#">My wish</a></div>
+        <div class="header_photo"></div>
+        <div class="header_icons"></div>
+    </div>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><button type="button" class="js-themeSwitcher"> Switch to <span class="js-themeSpan">dark</span> mode</button></li>
+        </ul>
+    </nav>
+</header>
+<main data-response="AY">
+    <section></section><!-- dreams -->
+    <section data-response="DP"></section><!-- brands -->
+    <section></section><!-- dreams -->
+    <section></section><!-- good idea -->
+    <section></section><!-- bad idea -->
+    <section></section><!-- wishlist -->
+</main>
+<footer data-response="DP"></footer>
+<script>
+const span = document.querySelector('.js-themeSpan');
+const body = document.querySelector('body');
+
+document.querySelector('.js-themeSwitcher').addEventListener('click', ()=>{
+    body.classList.toggle('dark-theme');
+    span.textContent = body.classList.contains('dark-theme') ? 'light':'dark';
+})
+</script>
+</body>
+</html>

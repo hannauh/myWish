@@ -1,0 +1,22 @@
+/*
+font-family: 'Baloo 2', cursive; - заголовки, лого,счетчик таймера
+font-family: 'Nunito', sans-serif; - основные текстовые элементы
+Для каждого блока (только контент) огранчение
+    max-width: 1268;
+    margin: 0 auto;
+
+Для темной темы к body будет добавлен class: dark-theme
+Светлая тема:
+#FC6A57  - основный цвет текста, лого, рамка при hover
+#FC6A57 80% - hover на wishlist
+#FFF5F5 - контрастный фон, рамки
+
+#FFF - контрастный текст
+
+#1F3865 - плохие идеи для подарка: заголовок,  рамка при hover
+ */
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
