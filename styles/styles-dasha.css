@@ -83,8 +83,8 @@
         border-color: var(--primary);
     }
     .block-list-item:hover .icon-container {
-        -webkit-mask: url("../img/star.png") no-repeat left 20px top 20px;
-        mask: url('../img/star.png') no-repeat left 20px top 20px;
+        -webkit-mask: url("../imgs/star.png") no-repeat left 20px top 20px;
+        mask: url('../imgs/star.png') no-repeat left 20px top 20px;
         mask-size: cover;
         background-color: var(--primary);
     }
@@ -133,7 +133,7 @@
 /*        position: absolute;*/
 /*        width: 100vw;*/
 /*        height: 194px;*/
-/*        background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, var(--secondary);*/
+/*        background: url('../imgs/bg-ellipse-big.png') no-repeat center top, url('../imgs/bg-ellipse-small.png') no-repeat top right 37%, var(--secondary);*/
 /*        background-blend-mode: multiply;*/
 /*        content: '';*/
 /*        z-index: -1;*/
