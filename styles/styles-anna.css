@@ -1,0 +1,348 @@
+/*
+font-family: 'Baloo 2', cursive; - заголовки, лого,счетчик таймера
+font-family: 'Nunito', sans-serif; - основные текстовые элементы
+Для каждого блока (только контент) огранчение
+    max-width: 1268;
+    margin: 0 auto;
+
+Для темной темы к body будет добавлен class: dark-theme
+Светлая тема:
+#FC6A57  - основный цвет текста, лого, рамка при hover
+#FC6A57 80% - hover на wishlist
+#FFF5F5 - контрастный фон, рамки
+
+#FFF - контрастный текст
+
+#1F3865 - плохие идеи для подарка: заголовок,  рамка при hover
+ */
+
+:root {
+    --primary: #FC6A57;
+    --secondary: #FFF5F5;
+    --bg : #1F3865;
+    --bg80: rgba(252, 106, 87, 0.8);
+    --big-ellipse: url('../img/bg-ellipse-big.svg');
+    --small-ellipse: url('../img/bg-ellipse-small.svg');
+}
+
+.body {
+    --primary: #FC6A57;
+    --secondary: #FFF5F5;
+    --bg : #1F3865;
+    --bg80: rgba(252, 106, 87, 0.8);
+    --big-ellipse: url('../img/bg-ellipse-big.svg');
+    --small-ellipse: url('../img/bg-ellipse-small.svg');
+    background: #fffff;
+}
+.dark-theme  {
+    --primary: #01ACB4;
+    --secondary: #787C85;
+    --bg : #4B5056;
+    --bg80: rgba(1, 172, 180, 0.8);
+    --big-ellipse: url('../img/dark-bg-ellipse-big.svg');
+    --small-ellipse: url('../img/dark-bg-ellipse-small.svg');
+    background: #E5E5E5;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.block-container{
+    max-width: 1268px;
+    margin: 50px auto;
+    color: var(--primary);    
+    text-align: center;
+}
+
+.block-title--container, .block-title--container>div{
+    display: flex;
+    align-items:center;
+}
+.block-title--container{
+    justify-content: center;
+    padding: 30px 0;
+}
+.block-title{
+    stext-align: center;
+    font-size: 40px;
+    font-family: "Baloo 2", cursive;
+
+}
+.block-title--container:before,
+.block-title--container:after{
+    content:'';
+    background-color: var(--secondary);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.block-title--container>div:before, .block-title--container>div:after{
+    content:'';
+    background-color: var(--secondary);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+.block-title--container *{
+    margin: 0 30px;
+}
+
+.block{
+    display: flex;
+    justify-content:space-between;
+    margin: 30px auto;
+}
+.block-img{
+    width: 326px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 4px;
+}
+.block-picture{
+    width: 386px;
+    height: 330px;
+    background: var(--secondary);
+    border-radius: 6px;
+}
+
+.block-picture-title{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-bg{
+    background: var(--secondary);
+    padding: 50px 0;
+}
+
+.blue{
+    color: var(--bg);
+}
+
+.svg,.svg-blue{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+   
+    .block-picture.blue:hover .svg-blue {
+        display: flex;
+        position: absolute;
+        margin: 30px;
+        fill: var(--bg);
+        stroke: var(--bg);
+    }
+    .block-picture.blue:hover {
+        background: var(--bg);
+        color: #FFFFFF;
+        box-shadow: var(--bg);
+        border-radius: 6px;
+        border: 1px solid var(--bg);
+    }
+
+    .block-picture:hover .block-picture-title,
+    .block-picture.blue:hover .block-picture-title{
+        margin: 30px;
+    }
+    .block-picture:hover {
+        background: var(--primary);
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+    }
+    .block-picture:hover .block-img,
+    .block-picture.blue:hover .block-img{
+        height: 230px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .block-picture:hover{
+        color: #FFFFFF;
+    }
+    .block-picture:hover .svg{
+        display: flex;
+        position: absolute;
+        margin: 30px;
+        fill: var(--primary);
+        stroke: var(--primary);
+    }
+
+    .block-picture.pink:hover #overlay {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        background-color: var(--bg80);
+        border-radius: 6px;
+
+        padding:40px;
+        position:absolute;
+        width: 386px;
+        height: 386px;
+        z-index:1;
+
+    }
+
+    .block-picture.pink:hover .svg-wishlist{
+        display: flex;
+        margin: 0 auto;
+    }
+
+}
+
+.block-container.pink{
+    max-width: 1268px;
+    margin: 0 auto;
+    background: var(--secondary);
+    color: var(--primary);
+}
+.block-picture.pink{
+    width: 386px;
+    height: 386px;
+    border: none;
+}
+.pink-block-img{
+    max-width: 386px;
+    max-height: 386px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.card-title{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFFFFF;
+    line-height: 36px;
+    text-align: center;
+}
+.card-link{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    word-wrap: break-word;
+    text-align: center;
+}
+.svg-wishlist,
+#overlay, 
+.link-before,
+.card-title-before{
+    display: none;
+}
+
+@media only screen
+and (max-width: 1023px) {
+
+    .block{
+     flex-direction: column;
+     align-items: center;
+    }
+    .block-container{
+        font-family: 'Baloo 2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .block-title--container{
+        margin: 0 auto;
+    }
+
+    .block-picture{
+        width: 335px;
+        height: 335px;
+        background: var(--secondary);
+        border-radius: 6px;
+        margin: 30px;
+    }
+
+    .block-picture.pink{
+        margin: 30px;
+        width: 100%;
+    }
+
+
+    .block-picture-title{
+        vertical-align: top;
+    }
+
+    .link-before{
+        display: block;
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 22.4px;
+        color: var(--primary);
+        word-wrap: break-word;
+        text-align: center;
+        margin: 20px;
+        max-width: 335px;
+    }
+    
+    .block-picture.pink{
+        height: 386px;
+        margin: 0 auto;
+        max-width: 275px;
+    }
+
+    .block-img{
+        width: 275px;
+        height: 200px;
+        margin: 30px;
+        border-radius: 4px;
+    }
+    .pink-block-img{
+        max-width: 335px;
+        max-height: 330px;
+        border-radius: 6px;
+    }
+    .pink-block-picture:hover .svg-wishlist, .pink-block-picture:hover #overlay {
+        display: none;
+    }
+    .card-title-before{
+        display: block;
+
+        color: var(--primary);
+        text-align: center;
+
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        width: 275px;
+        margin: 20px;
+    }
+
+    .block-container.pink{
+        margin: 0 auto;
+        background: var(--secondary);
+        color: var(--primary);
+    }
+
+    .block-title--container *{
+        margin: 0 10px;
+        font-size: 30px;
+    }
+    .pink-block-img{
+        width: 100%;
+    }
+
+}
