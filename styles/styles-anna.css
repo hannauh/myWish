@@ -21,8 +21,8 @@ font-family: 'Nunito', sans-serif; - основные текстовые эле�
     --secondary: #FFF5F5;
     --bg : #1F3865;
     --bg80: rgba(252, 106, 87, 0.8);
-    --big-ellipse: url('../img/bg-ellipse-big.svg');
-    --small-ellipse: url('../img/bg-ellipse-small.svg');
+    --big-ellipse: url('../imgs/bg-ellipse-big.svg');
+    --small-ellipse: url('../imgs/bg-ellipse-small.svg');
 }
 
 .body {
@@ -30,8 +30,8 @@ font-family: 'Nunito', sans-serif; - основные текстовые эле�
     --secondary: #FFF5F5;
     --bg : #1F3865;
     --bg80: rgba(252, 106, 87, 0.8);
-    --big-ellipse: url('../img/bg-ellipse-big.svg');
-    --small-ellipse: url('../img/bg-ellipse-small.svg');
+    --big-ellipse: url('../imgs/bg-ellipse-big.svg');
+    --small-ellipse: url('../imgs/bg-ellipse-small.svg');
     background: #fffff;
 }
 .dark-theme  {
@@ -39,8 +39,8 @@ font-family: 'Nunito', sans-serif; - основные текстовые эле�
     --secondary: #787C85;
     --bg : #4B5056;
     --bg80: rgba(1, 172, 180, 0.8);
-    --big-ellipse: url('../img/dark-bg-ellipse-big.svg');
-    --small-ellipse: url('../img/dark-bg-ellipse-small.svg');
+    --big-ellipse: url('../imgs/dark-bg-ellipse-big.svg');
+    --small-ellipse: url('../imgs/dark-bg-ellipse-small.svg');
     background: #E5E5E5;
 }
 
