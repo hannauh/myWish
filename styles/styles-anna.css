@@ -279,7 +279,7 @@ and (max-width: 1023px) {
 
 
     .block-picture-title{
-        vertical-align: top;
+        line-height: initial;
     }
 
     .link-before{
