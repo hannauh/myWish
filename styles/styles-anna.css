@@ -293,7 +293,6 @@ and (max-width: 1023px) {
         word-wrap: break-word;
         text-align: center;
         max-width: 335px;
-        margin: 20px 0;
     }
     
     .block-picture.pink{
