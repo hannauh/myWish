@@ -40,7 +40,7 @@ body{
     --secondary-bg: #FFF5F5;
     --hover-bg: rgba(252, 106, 87, 0.8);
     --primary: #FC6A57;
-    --decoration-el: 255,245,245; /*прозрачность*/
+    --decoration-el: #1F3865; /*прозрачность*/
     --contrast-text: #fff;
     --bad-idea: #1F3865;
     --bad-ideaText: #1F3865;
@@ -68,7 +68,7 @@ body{
     --secondary-bg: #787C85;
     --hover-bg: rgba(21, 172, 180, 0.8);
     --primary: #01ACB4;
-    --decoration-el: 120,124,133;/*прозрачность*/
+    --decoration-el: #0B0B0B; /*прозрачность*/
     --bad-idea: #0B0B0B;
     --photo-borderColor: var(--primary);
     --timer: rgba(16, 19, 23, 0.68);
