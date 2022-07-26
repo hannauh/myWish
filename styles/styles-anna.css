@@ -10,12 +10,13 @@
 
 .block-title--container {
     justify-content: center;
-    padding: 30px 0;
+    padding-top: 58px;
 }
 
 .block-title {
     text-align: center;
     font-size: 40px;
+    line-height: 64px;
 }
 
 .block-title--container:before,
@@ -45,7 +46,15 @@
 .block {
     display: flex;
     justify-content: space-between;
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 38px 0 100px;
+}
+
+.block.wishlist{
+    padding: 38px 0 22px;
+}
+.block.wishlist:last-child{ /* for footer*/
+    padding-bottom: 40px;
 }
 
 .block-img {
@@ -71,7 +80,7 @@
 
 .container-bg {
     background: var(--secondary-bg);
-    padding: 50px 0;
+    /*padding: 50px 0;*/
 }
 
 .blue {
@@ -209,6 +218,7 @@ and (max-width: 1023px) {
     .block {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .block-container {
@@ -221,6 +231,7 @@ and (max-width: 1023px) {
 
     .block-title--container {
         margin: 0 auto;
+        padding: 66px 0 16px;
     }
 
     .block-picture {
