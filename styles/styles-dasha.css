@@ -1,7 +1,7 @@
-/* brands cards*/
 .block-list{
     display: flex;
     justify-content: space-around;
+    padding: 38px 0 100px;
 }
 .block-list-item{
     position: relative;
@@ -9,10 +9,11 @@
     border-radius: 6px;
     transition: border-color 1s;
 }
-.block-list-item>.card-icon{
+.block-list-item>.icon-container{
     position: absolute;
     z-index: 1;
-    display: none;
+    width: 100%;
+    height: 100%;
     /*transition: background 1s linear;*/
 }
 .block-list-item .item-name{
@@ -31,7 +32,6 @@
     margin: 20px 0;
 }
 .block-list-item.brands>.item-name{
-    font-family: "Nunito", sans-serif;
     font-size: 20px;
     line-height: 28px;
     color: var(--primary);
@@ -43,19 +43,11 @@
     .block-list-item:hover {
         border-color: var(--primary);
     }
-    .block-list-item:hover .card-icon {
-        display: block;
-        margin: 20px;
-        left: 0;
-        fill: var(--primary);
-        stroke: var(--primary);
-    }
-    .block-list-item:hover img{
-        margin: 0;
-        height: 200px;
-        width: 198px;
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
+    .block-list-item:hover .icon-container {
+        -webkit-mask: url("../imgs/star.png") no-repeat left 20px top 20px;
+        mask: url('../imgs/star.png') no-repeat left 20px top 20px;
+        mask-size: cover;
+        background-color: var(--primary);
     }
     .block-list-item:hover .item-name {
         background-color: var(--primary);
@@ -67,17 +59,13 @@
     .block-container{
         max-width: 540px;
     }
-    .block-title--container{
-        margin-bottom: 27px;
-    }
-    .block-title--container *{
-        margin: 0 12px;
-    }
     .block-title{
         font-size: 30px;
+        line-height: 48px;
     }
     .block-list.brands{
         flex-direction: column;
+        padding: 30px 0;
     }
     .block-list-item.brands{
         flex-direction: row;
@@ -99,24 +87,17 @@
 
 .footer-container{
     background-blend-mode: multiply;
-    background: var(--big-ellipse) no-repeat center top, var(--small-ellipse) no-repeat top right 37%, var(--secondary);
+    background: var(--big-ellipse) no-repeat center top, var(--small-ellipse) no-repeat top right 37%, var(--secondary-bg);
 }
-footer{
-    max-width: 1268px;
-    margin: 0 auto;
-}
+
 .main-footer--container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 124px 0 40px;
+    padding-top: 124px;
+    padding-bottom: 40px;
 }
-.logo>a{
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 30px;
-    color: var(--primary);
-    text-decoration: none;
-}
+
 .main-footer--link{
     margin-left: 42px;
 }
@@ -135,10 +116,10 @@ footer{
         margin-bottom: 30px;
     }
     .footer-container{
-        background: var(--secondary);
+        background: var(--secondary-bg);
     }
     footer{
-        background: linear-gradient(rgba(255, 245, 245, 0) 0%,var(--secondary) 100%);
+        background: linear-gradient(rgba(255, 245, 245, 0) 0%,var(--secondary-bg) 100%);
         width: 100%;
         position: fixed;
         bottom: 0;
@@ -159,6 +140,7 @@ footer{
         margin: 0 30px;
         padding: 70px 0 45px;
     }
+     
    .svg-f{
         display: block;
         fill: var(--primary);
@@ -166,7 +148,7 @@ footer{
      }
    .svg-blue-f{
         display: block;
-        fill: var(--bg);
-        stroke: var(--bg);
+        fill: var(--decoration-el); /*прибрала rgb() тк ця змінна тільки тут і використовується*/
+        stroke: var(--decoration-el);
      }
 }
