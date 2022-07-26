@@ -68,8 +68,15 @@
     height: 200px;
     margin: 30px;
     border-radius: 4px;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
 }
-
+.img-container{
+    position: relative;
+    width: 384px;
+    height: 260px;
+}
 .block-picture {
     width: 386px;
     height: 330px;
@@ -108,6 +115,7 @@
         margin: 30px;
         fill: var(--bad-idea);
         stroke: var(--bad-idea);
+        z-index: 2;
     }
 
     .block-picture.blue:hover {
@@ -118,10 +126,10 @@
         border: 1px solid var(--bad-idea);
     }
 
-    .block-picture:hover .block-picture-title,
-    .block-picture.blue:hover .block-picture-title {
-        margin: 30px;
-    }
+    /*.block-picture:hover .block-picture-title,*/
+    /*.block-picture.blue:hover .block-picture-title {*/
+    /*    margin: 30px;*/
+    /*}*/
 
     .block-picture:hover {
         background: var(--primary);
@@ -146,6 +154,7 @@
         margin: 30px;
         fill: var(--primary);
         stroke: var(--primary);
+        z-index: 2;
     }
 
     .block-picture.pink:hover .overlay {
