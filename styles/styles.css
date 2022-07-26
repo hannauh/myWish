@@ -32,7 +32,7 @@ body{
 .sectionsWrapper{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 clamp(20px, 18vw, 80px);
+    padding: 0 clamp(20px, 5vw, 80px);
 }
 
 :root {

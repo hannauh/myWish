@@ -59,9 +59,6 @@
     .block-container{
         max-width: 540px;
     }
-    .block-title--container *{
-        margin: 0 12px;
-    }
     .block-title{
         font-size: 30px;
         line-height: 48px;
