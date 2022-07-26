@@ -1,37 +1,42 @@
-.block-list{
+.block-list {
     display: flex;
     justify-content: space-around;
     padding: 38px 0 100px;
 }
-.block-list-item{
+
+.block-list-item {
     position: relative;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     border-radius: 6px;
     transition: border-color 1s;
 }
-.block-list-item>.icon-container{
+
+.block-list-item > .icon-container {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
     /*transition: background 1s linear;*/
 }
-.block-list-item .item-name{
+
+.block-list-item .item-name {
     transition: background-color 1s;
 }
 
 /* BRANDS */
-.block-list-item.brands{
+.block-list-item.brands {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
 }
-.block-list-item.brands>img{
+
+.block-list-item.brands > img {
     height: 160px;
     margin: 20px 0;
 }
-.block-list-item.brands>.item-name{
+
+.block-list-item.brands > .item-name {
     font-size: 20px;
     line-height: 28px;
     color: var(--primary);
@@ -39,43 +44,52 @@
     width: 100%;
     text-align: center;
 }
+
 @media (min-width: 1025px) {
     .block-list-item:hover {
         border-color: var(--primary);
     }
+
     .block-list-item:hover .icon-container {
         -webkit-mask: url("../imgs/star.png") no-repeat left 20px top 20px;
         mask: url('../imgs/star.png') no-repeat left 20px top 20px;
         mask-size: cover;
         background-color: var(--primary);
     }
+
     .block-list-item:hover .item-name {
         background-color: var(--primary);
         color: white;
     }
 }
+
 @media only screen and
-(max-width: 1024px){
-    .block-container{
+(max-width: 1024px) {
+    .block-container {
         max-width: 540px;
     }
-    .block-title{
+
+    .block-title {
         font-size: 30px;
         line-height: 48px;
     }
-    .block-list.brands{
+
+    .block-list.brands {
         flex-direction: column;
         padding: 30px 0;
     }
-    .block-list-item.brands{
+
+    .block-list-item.brands {
         flex-direction: row;
         width: auto;
     }
-    .block-list-item.brands>.item-name{
+
+    .block-list-item.brands > .item-name {
         width: auto;
         margin-left: 16px;
     }
-    .block-list-item.brands>img{
+
+    .block-list-item.brands > img {
         height: 80px;
         margin-bottom: 0;
     }
@@ -85,12 +99,12 @@
 
 /* main footer */
 
-.footer-container{
+.footer-container {
     background-blend-mode: multiply;
     background: var(--big-ellipse) no-repeat center top, var(--small-ellipse) no-repeat top right 37%, var(--secondary-bg);
 }
 
-.main-footer--container{
+.main-footer--container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,57 +112,64 @@
     padding-bottom: 40px;
 }
 
-.main-footer--link{
+.main-footer--link {
     margin-left: 42px;
 }
-.main-footer--link>svg>path{
+
+.main-footer--link > svg > path {
     fill: var(--primary);
 }
 
 /* mobile-nav */
 
-.mobile-nav--container{
+.mobile-nav--container {
     display: none;
 }
 
-@media only screen and (max-width: 1024px){
-    main{
+@media only screen and (max-width: 1024px) {
+    main {
         margin-bottom: 30px;
     }
-    .footer-container{
+
+    .footer-container {
         background: var(--secondary-bg);
     }
-    footer{
-        background: linear-gradient(rgba(255, 245, 245, 0) 0%,var(--secondary-bg) 100%);
+
+    footer {
+        background: linear-gradient(rgba(255, 245, 245, 0) 0%, var(--secondary-bg) 100%);
         width: 100%;
         position: fixed;
         bottom: 0;
         z-index: 1;
     }
-    .main-footer--container{
+
+    .main-footer--container {
         display: none;
     }
-    .mobile-nav--container{
+
+    .mobile-nav--container {
         display: block;
         max-width: 540px;
         margin: auto;
     }
-    .mobile-nav{
+
+    .mobile-nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 30px;
         padding: 70px 0 45px;
     }
-     
-   .svg-f{
+
+    .svg-f {
         display: block;
         fill: var(--primary);
         stroke: var(--primary);
-     }
-   .svg-blue-f{
+    }
+
+    .svg-blue-f {
         display: block;
         fill: var(--decoration-el); /*прибрала rgb() тк ця змінна тільки тут і використовується*/
         stroke: var(--decoration-el);
-     }
+    }
 }

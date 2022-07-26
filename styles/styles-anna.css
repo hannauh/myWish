@@ -191,7 +191,6 @@
 }
 
 .card-title {
-    /*font-family: 'Baloo 2';*/
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -201,7 +200,6 @@
 }
 
 .card-link {
-    /*font-family: 'Nunito';*/
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
