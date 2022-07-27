@@ -253,6 +253,9 @@ and (max-width: 1023px) {
         background: var(--secondary-bg);
         border-radius: 6px;
         margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .block-picture.pink {
@@ -282,11 +285,15 @@ and (max-width: 1023px) {
         margin: 0 auto;
         max-width: 275px;
     }
-
-    .block-img {
+    .img-container{
         width: 275px;
         height: 200px;
         margin: 30px;
+    }
+    .block-img {
+        width: 275px;
+        height: 200px;
+        margin: 0;
         border-radius: 4px;
     }
 
