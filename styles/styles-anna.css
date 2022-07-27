@@ -282,7 +282,9 @@ and (max-width: 1023px) {
         margin: 0 auto;
         max-width: 275px;
     }
-
+    .img-container{
+        width: 275px;
+    }
     .block-img {
         width: 275px;
         height: 200px;
