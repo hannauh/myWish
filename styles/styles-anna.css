@@ -62,12 +62,13 @@
 }
 
 .block-picture {
-    width: calc(33% - 60px);
+    width: 30%;
     background: var(--secondary-bg);
     border-radius: 6px;
     align-items: center;
     position: relative;
     border: 1px solid transparent;
+    transition: border-color 0.5s;
 }
 .img-container{
     padding: 30px 30px 0;
@@ -84,6 +85,7 @@
     padding: 30px 0 40px;
     font-size: var(--cards-headings);
     line-height: 140%;
+    transition: background-color 1s;
 }
 .svg{
     display: none;
@@ -93,18 +95,11 @@
     left: 20px;
     top: 20px;
 }
-
-
 .block--badIdea{
     color: var(--bad-ideaText);
 }
 .dark-theme .blue  .block-title{
     color: var(--contrast-text);
-}
-.wishlist .block-picture{
-    width: calc(33% - 60px);
-    height: calc(33% - 60px);
-    position: relative;
 }
 
 /*.pink-block-img {*/
