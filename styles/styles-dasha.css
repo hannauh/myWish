@@ -8,18 +8,17 @@
     position: relative;
     border: 1px solid transparent;
     border-radius: 6px;
-    transition: border-color 1s;
+    transition: border-color 0.5s;
 }
 
 .block-list-item>.card-icon{
     position: absolute;
     z-index: 1;
     display: none;
-    /*transition: background 1s linear;*/
 }
 
 .block-list-item .item-name {
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 /* BRANDS */

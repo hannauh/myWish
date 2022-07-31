@@ -143,6 +143,7 @@
         background: var(--primary);
         border-color: var(--primary);
         color: var(--contrast-text);
+        box-shadow: 0px 10px 40px var(--shadow);
     }
     .block:not(.wishlist) .block-picture:hover .img-container{
         padding: 0;
