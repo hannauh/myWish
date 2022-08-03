@@ -1,6 +1,6 @@
 
 .header {
-    background: var(--gradient); /*linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);*/
+    background: var(--gradient);
     font-size: var(--standart-text);
     line-height: 140%;
 }
@@ -8,8 +8,8 @@
 .header_contentWrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
     position: relative;
+    padding-top: 40px;
 }
 
 .header_leftPart {
@@ -35,7 +35,10 @@
     height: 120px;
     width: 100%;
 }
-
+.header_stickyMenu .header_contentWrapper{
+    align-items: center;
+    padding-top: 49px;
+}
 .header_photoWrapper {
     background: url("../imgs/bubbles.svg") no-repeat 0 0;
     width: 37vw;
@@ -77,7 +80,6 @@
 
 .logo {
     font-size: var(--big-text);
-    line-height: 48px;
 }
 
 .header_icons {
@@ -107,9 +109,6 @@
     position: relative;
 }
 
-.header_nav {
-    margin-bottom: 10vw;
-}
 
 .header_nav ul {
     display: flex;
@@ -169,7 +168,7 @@
 }
 
 /*  target the element after the label*/
-.checkbox:checked + .theme_switcher .ball {
+.dark-theme .theme_switcher .ball {
     transform: translateX(18px);
 }
 
@@ -288,5 +287,13 @@
         right: 125px;
         top: -100px;
         transform: scale(2);
+    }
+}
+
+
+@media (max-width: 375px) {
+    .theme_switcher {
+        top: -50px;
+        right: 20px;
     }
 }

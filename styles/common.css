@@ -1,0 +1,101 @@
+/*
+font-family: 'Baloo 2', cursive; - заголовки, лого,счетчик таймера
+font-family: 'Nunito', sans-serif; - основные текстовые элементы
+Для каждого блока (только контент) огранчение
+    max-width: 1268;
+    margin: 0 auto;
+
+Для темной темы к body будет добавлен class: dark-theme
+Светлая тема:
+#FC6A57  - основный цвет текста, лого, рамка при hover
+#FC6A57 80% - hover на wishlist
+#FFF5F5 - контрастный фон, рамки
+
+#FFF - контрастный текст
+
+#1F3865 - плохие идеи для подарка: заголовок,  рамка при hover
+ */
+a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary);
+    background: var(--main-bg);
+}
+.logo, .heading, .timer, .card-title, .block-title{
+    font-family: 'Baloo 2', cursive;
+}
+
+.sectionsWrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 80px);
+}
+
+:root {
+    --main-bg: #fff;
+    --secondary-bg: #FFF5F5;
+    --hover-bg: rgba(252, 106, 87, 0.8);
+    --primary: #FC6A57;
+    --decoration-el: #1F3865; /*прозрачность*/
+    --contrast-text: #fff;
+    --bad-idea: #1F3865;
+    --bad-ideaText: #1F3865;
+    --timer: rgba(254, 194, 196, 0.3);
+    --gradient: linear-gradient(to bottom,rgba(255, 241, 242, 1) 0%,rgba(255, 255, 255, 0.8) 85px);
+    --shadow: rgba(239, 219, 220, 0.4);
+
+
+
+    --headings-1: clamp(60px, 5vw, 80px);
+    --headings-2: 40px;
+    --cards-headings: 20px;
+    --cards-description: 16px;
+    --big-text: 30px; /*логотип, таймер*/
+    --standart-text: 20 px;
+
+    --photo-size: 460px;
+    --timer-size: clamp(278px, 22vw ,318px);
+    --timerDecor-size: clamp(113px, 9vw ,130px);
+    --photo-borderColor: #fff;
+    --big-ellipse: url('../imgs/bg-ellipse-big.svg');
+    --small-ellipse: url('../imgs/bg-ellipse-small.svg');
+}
+
+
+.dark-theme {
+    --main-bg: #4B5056;
+    --secondary-bg: #787C85;
+    --hover-bg: rgba(21, 172, 180, 0.8);
+    --primary: #01ACB4;
+    --decoration-el: #0B0B0B;
+    --bad-idea: #0B0B0B;
+    --photo-borderColor: var(--primary);
+    --timer: rgba(16, 19, 23, 0.68);
+    --big-ellipse: url('../imgs/dark-bg-ellipse-big.svg');
+    --small-ellipse: url('../imgs/dark-bg-ellipse-small.svg');
+    --gradient: linear-gradient(to bottom,rgba(120, 124, 133, 1) 0%,rgba(75, 80, 86, 0.8) 90px);
+    --shadow:  rgba(120, 124, 133, 0.4);
+}
+
+
+@media (max-width: 991.98px) {
+    :root {
+        --headings-1: 60px;
+        --headings-2: 30px;
+        --big-text: 24px;
+        --standart-text: 16px;
+
+        --photo-size:60px;
+    }
+}
+
+
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
